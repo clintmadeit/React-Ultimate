@@ -1,24 +1,23 @@
 import { useState } from "react";
 
 const messages = [
-  "Learn React 😀",
-  "Apply for jobs 😄",
-  "Invest in your income 😛",
+  "Learn React ⚛️",
+  "Apply for jobs 💼",
+  "Invest your new income 🤑",
 ];
-
 export default function App() {
   const [step, setStep] = useState(1);
   const [isOpen, setIsOpen] = useState(true);
 
   function handlePrevious() {
     step > 1
-      ? setStep(step - 1)
+      ? setStep((s) => s - 1)
       : alert("You are at step 1. Please click next");
   }
 
   function handleNext() {
     step < 3
-      ? setStep(step + 1)
+      ? setStep((s) => s + 1)
       : alert("You are at the last step. Please click previous.");
   }
 

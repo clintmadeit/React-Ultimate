@@ -156,7 +156,7 @@ function Stats({ items }) {
         {percentage === 100
           ? "You got everything ready for your travel! ✈️"
           : `👜 You have ${numItems} item${
-              numItems === 0 || numItems > 1 ? "s" : ""
+              numItems > 1 ? "s" : ""
             } on your list, and you
         already parked ${itemsPacked} (
         ${numItems >= 1 ? percentage : 0}
